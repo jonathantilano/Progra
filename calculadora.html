@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Calculadora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<style>
+  body {
+    background-color: beige;
+  }
+</style>
+
+<div class="container">
+
+  <h1>Calculadora</h1>
+
+
+  <script>
+    function suma() {
+
+      var a = document.f1.a.value;
+      var b = document.f1.b.value;
+      var r = document.f1.c.value;
+      r = parseFloat(a) + parseFloat(b);
+      document.f1.c.value = r;
+
+    }
+
+    function resta() {
+
+      var a = document.f1.a.value;
+      var b = document.f1.b.value;
+      var r = document.f1.c.value;
+      r = parseFloat(a) - parseFloat(b);
+      document.f1.c.value = r;
+
+    }
+
+    function multiplicacion() {
+
+      var a = document.f1.a.value;
+      var b = document.f1.b.value;
+      var r = document.f1.c.value;
+      r = parseFloat(a) * parseFloat(b);
+      document.f1.c.value = r;
+
+    }
+
+    function division() {
+
+      var a = document.f1.a.value;
+      var b = document.f1.b.value;
+      var r = document.f1.c.value;
+      r = parseFloat(a) / parseFloat(b);
+      //document.f1.c.value=r;
+      alert('El resultado de la división es: ' + r);
+
+    }
+
+    function Calcular() {
+
+      var a = document.f1.a.value;
+      var b = document.f1.b.value;
+      var y = document.f1.y.value;
+
+
+
+      var r = document.f1.c.value;
+      var x = document.f1.d.value;
+      var z = document.f1.f.value;
+
+      r = parseFloat(a) * (parseFloat(b) / 100);
+      document.f1.c.value = r;
+      z = parseFloat(a) * (parseFloat(y) / 100);
+      document.f1.f.value = z;
+      x = parseFloat(a) + parseFloat(r) + parseFloat(z);
+      document.f1.d.value = x;
+
+    }
+
+
+
+  </script>
+
+  <!--function porcentaje() {
+
+        var a = document.f1.a.value;
+        var b = document.f1.b.value;
+        var r = document.f1.c.value;
+        r = parseFloat(a) * (parseFloat(b) / 100);
+        document.f1.c.value = r;
+
+
+        //
+        function Calcular() {
+
+        var a = document.f1.a.value;
+        var b = document.f1.b.value;
+        var y = document.f1.y.value;
+       
+       
+
+        var r = document.f1.c.value;
+        var x = document.f1.d.value;
+        var z = document.f1.f.value;
+        
+        r = parseFloat(a) * (parseFloat(b) / 100);
+        document.f1.c.value = r;
+        z = parseFloat(a) * (parseFloat(y) / 100);
+        document.f1.f.value = z;
+        x = parseFloat(a) +  (parseFloat (f + d));
+        document.f1.d.value = x;
+        
+      }
+ <input type="Button" name="" value="sumar" onclick="suma()" class="btn btn-primary">
+        <input type="Button" name="" value="restar" onclick="resta()" class="btn btn-success">
+        <input type="Button" name="" value="multiplicar" onclick="multiplicacion()" class="btn btn-warning">
+        <input type="Button" name="" value="dividir" onclick="division()" class="btn btn-danger">
+        <input type="Button" name="" value="Calcular" onclick="Calcular()" class="btn btn-success">
+        <input type="Button" name="" value="Limpiar" onclick="reset()" class="btn btn-primary">
+        <br><br>
+      }-->
+
+  <form name="f1" action="calculadora.html" method="POST">
+    <div class="form-group">
+
+      <label for="numero1">Inserte el Número 1:</label>
+      <input type="text" class="form-control" id="a" placeholder="Ingrese un número" name="a">
+
+      <br>
+      <label for="numero2">Inserte el Número 2:</label>
+      <input type="text" class="form-control" id="b" placeholder="Inserte la Utilidad del 30%" name="b">
+      <br>
+
+      <label for="numero3">Inserte el Número 3:</label>
+      <input type="text" class="form-control" id="y" placeholder="Inserte el IVA del 19%" name="y">
+      <br>
+      <!--boton calcular-->
+      <input type="Button" name="" value="Calcular" onclick="Calcular()" class="btn btn-success">
+      
+      <!--boton limpiar-->
+      <input type="Button" name="" value="Limpiar" onclick="reset()" class="btn btn-primary">
+      <br><br>
+
+      <label for="resultado">Valor de venta:</label>
+      <input type="text" class="form-control" id="d" name="d" placeholder="Aquí se imprime el resultado">
+      <br>
+      <label for="Valor de venta">Ganancia</label>
+      <input type="text" class="form-control" id="c" name="c" placeholder="Aquí se imprime el resultado">
+      <br>
+      <label for="Valor de venta">IVA:</label>
+      <input type="text" class="form-control" id="f" name="f" placeholder="Aquí se imprime el resultado">
+
+    </div>
+
+  </form>
+
+
+
+</div>
+
+</body>
+
+</html>

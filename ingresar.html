@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+  <title>Formulario de ingreso de Producto</title>
+</head>
+
+
+<body>
+ 
+  <style>
+    body {
+      background-color: beige;
+    }
+  </style>
+  <div class="container">
+    <!--<div class="container">, este contenedor permite que no permite que el formulario no este pegado al margen izq, y queda cerrado </div> en la linea 73 -->
+    <h1>Formulario de ingreso de Producto</h1>
+
+
+    <form action="#" method="POST">
+      <!--para la fase 4 nos lleva a una tabla de una base de datos en MSQL-->
+      <div class="form-group">
+          <label for="email">Codigo del producto:</label>
+          <!--<input type="email", valida que lleve el @ //<input type="password" valida que no ve los campos, number no permite texto-->
+          <input type="email" class="form-control" placeholder="Ingrese aquí Codigo del Producto" id="email"
+              name="e" style="width:300px">
+      </div>
+      <div class="form-group">
+          <label for="email">Nombre de producto:</label>
+          <input type="text" class="form-control" placeholder="Ingrese aquí nombre del producto" id="email" name="n"
+              style="width:300px">
+      </div>
+      <div class="form-group">
+          <label for="email">Marca del producto:</label>
+          <input type="number" class="form-control" placeholder="ingresar marca del producto" id="email" name="t"
+              style="width:300px">
+      </div>
+      <div class="form-group">
+          <label for="email">Precio de compra:</label>
+          <input type="text" class="form-control" placeholder="ingrese precio de la compra" id="email" name="c" style="width:300px">
+      </div>
+
+      <div class="form-group">
+          <label for="email">Cantidad comprada:</label>
+          <input type="text" class="form-control" placeholder="ingrese aca cantidad de la compra" id="email" name="di"
+              style="width:300px">
+      </div>
+
+
+      <!--<div class="form-group">
+        <label for="pwd">Contraseña:</label>
+        <input type="password" class="form-control" placeholder="Contraseña" id="pwd" name="p" style="width:300px">
+      </div>-->
+
+      <br>
+
+      <!--<select class="form-select" aria-label="Default select example" name="g" style="width:300px">
+        <option selected>Seleccione su género</option>
+        <option value="1">F</option>
+        <option value="2">M</option>
+        <option value="3">Other</option>-->
+      </select>
+
+
+      <br>
+      <button type="submit" class="btn btn-info">Registro producto</button>
+      <!--
+
+      <button type="submit" class="btn btn-primary">Registrar usuarios</button>
+      <button type="submit" class="btn btn-danger">Eliminar usuarios</button>
+      <button type="submit" class="btn btn-warning">Actualizar usuarios</button>
+-->
+    </form>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
